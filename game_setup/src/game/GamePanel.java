@@ -10,16 +10,16 @@ public class GamePanel extends JPanel implements KeyListener {
 
 	public GamePanel() {
 		addKeyListener(this);
-		setBackground(new Color(64, 64, 64));
+		setBackground(new Color(64, 64, 64));						//Sets the background color using r, g, b values
 		setDoubleBuffered(true);
 		setFocusable(true);
 		
-		repaint();
+		repaint();													//updates the graphics
 	}
 	
 	public void gameManager(Graphics g) {
-		g.setColor(Color.MAGENTA);
-		g.drawRect(200, 200, 200, 200);
+		g.setColor(Color.MAGENTA);									//sets the color of the graphics
+		g.drawRect(200, 200, 200, 200);								//draws a rectangle
 	}
 	
 	@Override
